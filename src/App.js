@@ -1,26 +1,31 @@
-// import logo from './logo.svg';
-import './App.css';
+import Switch from "./component/Switch";
+import { AiOutlineHeart } from "react-icons/ai";
+import {AiOutlineTwitter} from "react-icons/ai";
 
 function App() {
-  return (
-
-    <div className="max-w-2xl rounded-lg bg-white py-10 px-10 shadow-xl shadow-blue-200/50 border-2 border-blue-100/60">
+  return (<div>
+      <Switch />
+    <div className="bg-light dark:bg-slate-800 px-36 py-96">
+    <div className="max-w-2xl mx-auto rounded-2xl bg-white dark:bg-card-dark py-10 px-10 shadow-xl dark:shadow-md shadow-blue-200/50 dark:shadow-blue-500/5 border-2 border-blue-100/60 dark:border-none">
       <div className="flex justify-between gap-5">
         <img className="float-left rounded-full w-12" src="https://pbs.twimg.com/media/ESQYr1nXkAA-V_K.jpg" alt="profile-pict"></img>
           <div className="mr-auto">
-            <h6 className="font-bold">John Doe</h6>
+            <h6 className="font-bold dark:text-white">John Doe</h6>
             <h6 className="text-gray-400 ">@realjohndoe</h6>
           </div>
-          <img className="w-12" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="twitter-icon"></img>
+        <AiOutlineTwitter size={48} color="dodgerblue"/>
         </div>
-        <div className="mt-5">
+        <div className="mt-5 dark:text-white">
           <h6>Why do they call it 'debugging' when it feels more like 'wildly guessing and hoping for the best'? <hashtag>#programming #coding #debugging</hashtag></h6>
         </div>
         <div className="mt-5 flex gap-4">
-          <img className="w-6 h-5" src="http://cdn.onlinewebfonts.com/svg/img_524760.png" alt="love-icon"></img>
-          <h6 className="text-gray-500 text-sm font-semibold mr-1">650</h6>
-          <h6 className="text-gray-500 text-sm font-semibold">3:40 PM - Feb 24, 2022</h6>
+          <AiOutlineHeart size={20} color="gray"/>
+          <h6 className="text-gray-400 text-sm font-semibold mr-1">650</h6>
+          <h6 className="text-gray-400 text-sm font-semibold">3:40 PM - Feb 24, 2022</h6>
         </div>
+
+    </div>
+    </div>
     </div>
   );
 }
