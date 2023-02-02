@@ -15,7 +15,7 @@ function Switch(){
     setTheme(theme === "dark" ? "light" : "dark");
     };
     return(<div>
-        <div onClick={handleThemeSwitch} className="font-bold">Click to change theme</div>
+        <div onClick={handleThemeSwitch} className="font-bold dark:text-white border">Click to change theme</div>
     </div>
     )
 }
