@@ -3,9 +3,9 @@ import { AiOutlineHeart } from "react-icons/ai";
 import {AiOutlineTwitter} from "react-icons/ai";
 
 function App() {
-  return (<div>
+  return (<div >
       <Switch />
-    <div className="px-4 py-20 sm:px-20 md:px-36 lg:px-36 sm:py-96 md:py-96 lg:py-96 ">
+    <div className="px-4 py-20 sm:px-20 md:px-36 lg:px-36 sm:py-96 md:py-96 lg:py-96 bg-light dark:bg-slate-800 transition 300 ease-in-out">
       <div className="max-w-2xl min-w-sm mx-auto rounded-2xl bg-white dark:bg-card-dark py-10 px-10 shadow-xl dark:shadow-md shadow-blue-200/50 dark:shadow-blue-500/5 border-2 border-blue-100/60 dark:border-none transition 300 ease-in-out">
         <div className="flex justify-between gap-5">
           <img className="float-left rounded-full w-12" src="https://pbs.twimg.com/media/ESQYr1nXkAA-V_K.jpg" alt="profile-pict"></img>
